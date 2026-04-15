@@ -36,6 +36,7 @@ local ConfigTabClass = newClass("ConfigTab", "UndoHandler", "ControlHost", "Cont
 	self.varControls = { }
 	
 	self.toggleConfigs = false
+	self.configSetService = new("ConfigSetService", self)
 
 	self.controls.sectionAnchor = new("LabelControl", { "TOPLEFT", self, "TOPLEFT" }, { 0, 20, 0, 0 }, "")
 
